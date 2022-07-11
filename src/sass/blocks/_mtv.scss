@@ -1,0 +1,56 @@
+.mtv {
+    &__wrapper {
+        margin-top: 236px;
+        border: 1px solid #fff;
+        border-radius: 30px 0px;
+        padding: 50px 0 50px 80px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 60px;   
+    }
+    &__photo {
+        position: relative;
+    }
+    &__box {
+        height: 483px;
+        width: 370px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 30px 0px;
+        }
+    }
+    &__descr {
+        position: relative;
+    }
+    &__text {
+        font-weight: 400;
+    }
+    &__text_bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__underline {
+        margin-top: 25px;
+        height: 1px;
+        width: 520px;
+        background-color: rgba(255, 255, 255, 0.6);    
+    }
+    &__subtitle {
+       margin-top: 25px;
+       a {
+        color: #7A66CC;
+        font-weight: 700;
+        text-decoration: none;
+       }
+        
+    }
+
+}

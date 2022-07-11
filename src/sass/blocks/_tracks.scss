@@ -1,0 +1,48 @@
+.tracks {
+    margin-top: 265px;
+    display: grid;
+    grid-template-columns: 510px 540px;
+    column-gap: 60px;
+    &__photo {
+        padding-top: 36px;
+      
+    }
+    &__player {
+        padding: 62px 0 35px;
+    }
+    &__list {
+        padding-top: 20px;
+        display: flex;
+    }    
+    &__number {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 27px;
+        color: #fff;
+        opacity: 0.5;
+        margin-right: 17px;
+        padding-top: 2px;
+    }
+    &__name {
+        font-weight: 400;
+        &:hover {
+          cursor: pointer;
+          color: #7A66CC; 
+        }
+    }
+    &__link {
+        margin-top: 50px;
+        display: flex;
+        &_text {
+          margin-right: 25px;  
+        }
+        &_social {
+            img {
+                padding:0 15px;
+                &:hover {    
+                    background-color: #7A66CC;
+                }
+            }
+        }
+    }
+}
