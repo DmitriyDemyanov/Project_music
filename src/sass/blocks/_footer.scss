@@ -1,3 +1,43 @@
 footer {
+    margin-top: 180px;
     min-height: 300px;
+    
+}
+
+.footer {
+    &__logo { 
+        display: flex;
+        justify-content: center;   
+    }
+    &__text {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+    }
+    &__title {
+        margin-right: 15px;
+        text-transform: uppercase;
+        text-align: right;
+    }
+    &__nickname {
+        margin-left: 15px;
+        text-transform: uppercase;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        img {
+            padding: 0 15px;
+        }
+    }
+    &__brand {
+        margin-top: 100px;
+        margin-bottom: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.5);
+    }
 }
