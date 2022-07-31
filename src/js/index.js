@@ -534,3 +534,4 @@ $(document).ready(function(){
         variableWidth: true
     });
   })
+

@@ -9,6 +9,54 @@
     }
     &__player {
         padding: 62px 0 35px;
+        display: flex;
+        align-items: center;
+        &_band {
+            position: relative;
+            width: 317px;
+            height: 2px;
+            background-color: #fff;
+            
+            &-second {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 30%;
+                height: 2px;
+                background-color: #7A66CC;  
+                 
+            }
+            
+        }
+        &_row {
+            width: 2px;
+            height: 21px;
+            background-color: #7A66CC;
+            position: absolute;
+            top: -9px;
+            left: 30%;
+            cursor: pointer;
+        }
+        &_watch {
+            display: flex; 
+            margin-left: 47px;
+
+
+        }
+        &_stopwatch {
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: 18px;
+            color: #fff;
+        }
+        
+        &_number {
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: 18px;
+            color: #fff;
+        }
+
     }
     &__list {
         padding-top: 20px;
@@ -44,5 +92,14 @@
                 }
             }
         }
+    }
+    &__triangle-right {
+        width: 0;
+        height: 0;
+        border-top: 12px solid transparent;
+        border-left: 22px solid #fff;
+        border-bottom: 12px solid transparent;
+        margin-right: 45px;
+        cursor: pointer;
     }
 }

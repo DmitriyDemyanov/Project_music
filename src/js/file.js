@@ -73,7 +73,7 @@
 
 
 // for (let value of arr) {
-//     // console.log(value);
+
 //     if (value % 2 !== 0) {
 //         res = `${res} ${value}`;
 //     } 
@@ -176,4 +176,40 @@
 // console.log(isOpposite('dina', 'dina'));
 
 
+// function countBy(x, n) {
+//   let z = [];
+//   let a = 0;
+// for(let i = 0; i < n; i++) {
+  
+// a = x + a
+//   z.push(a)
+// }
+//  return z
+// }
 
+// console.log((countBy(3,4)));
+
+
+
+
+//   function sumOfDifferences(arr) {
+//     let res = 0;
+//     let arrNew = [];
+//     for (let i = 0; i < arr.length; i++) {
+//       if(arr[i] > arr[i + 1]) {
+//            arrNew.push(arr[i])
+        
+//         console.log(arrNew);
+//       } else if(arr[i] < arr[i + 1]){
+//          arrNew.push(arr[i + 1])
+//         console.log(arrNew);
+//       }
+//       return arrNew
+//     }
+   
+   
+
+    
+//   }
+// console.log((sumOfDifferences([1, 2, 10])));
+// console.log(t);
