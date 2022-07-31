@@ -530,7 +530,7 @@ $(document).ready(function(){
         prevArrow: '.carousel__box-l',
         nextArrow: '.carousel__box-r',
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         variableWidth: true
     });
   })

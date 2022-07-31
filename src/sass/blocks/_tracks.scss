@@ -16,26 +16,28 @@
             width: 317px;
             height: 2px;
             background-color: #fff;
-            
+            &:after {
+                content: '';
+                width: 2px;
+                height: 21px;
+                background-color: #7A66CC;
+                position: absolute;
+                top: -9px;
+                left: 30%;
+                cursor: pointer;
+            } 
             &-second {
                 position: absolute;
                 top: 0;
                 left: 0;
                 width: 30%;
                 height: 2px;
-                background-color: #7A66CC;  
+                background-color: #7A66CC;
+                 
+                
                  
             }
             
-        }
-        &_row {
-            width: 2px;
-            height: 21px;
-            background-color: #7A66CC;
-            position: absolute;
-            top: -9px;
-            left: 30%;
-            cursor: pointer;
         }
         &_watch {
             display: flex; 
