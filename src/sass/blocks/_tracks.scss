@@ -4,8 +4,16 @@
     grid-template-columns: 510px 540px;
     column-gap: 60px;
     &__photo {
-        padding-top: 36px;
+        margin-top: 36px;
+        width: 510px;
+        height: 510px;
       
+        img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
     &__player {
         padding: 62px 0 35px;
@@ -16,33 +24,32 @@
             width: 317px;
             height: 2px;
             background-color: #fff;
-            &:after {
-                content: '';
-                width: 2px;
-                height: 21px;
-                background-color: #7A66CC;
-                position: absolute;
-                top: -9px;
-                left: 30%;
-                cursor: pointer;
-            } 
+
             &-second {
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 30%;
+                width: 0%;
                 height: 2px;
                 background-color: #7A66CC;
-                 
-                
-                 
+                transition: width 1000ms;
+                &:after {
+                    content: '';
+                    width: 2px;
+                    height: 21px;
+                    background-color: #7A66CC;
+                    position: absolute;
+                    top: -9px;
+                    right: 0;
+                    cursor: pointer;
+                } 
             }
             
         }
         &_watch {
             display: flex; 
             margin-left: 47px;
-
+            align-items: center;
 
         }
         &_stopwatch {
@@ -60,26 +67,32 @@
         }
 
     }
-    &__list {
+    .track {
         padding-top: 20px;
         display: flex;
-    }    
-    &__number {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 27px;
-        color: #fff;
-        opacity: 0.5;
-        margin-right: 17px;
-        padding-top: 2px;
-    }
-    &__name {
-        font-weight: 400;
-        &:hover {
-          cursor: pointer;
-          color: #7A66CC; 
+        &.active {
+            .track__name {
+                color: #7A66CC;
+            }
         }
-    }
+        &__number {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 27px;
+            color: #fff;
+            opacity: 0.5;
+            margin-right: 17px;
+            padding-top: 2px;
+        }
+        &__name {
+            font-weight: 400;
+            &:hover {
+              cursor: pointer;
+              color: #7A66CC; 
+            }
+        }
+    }    
+
     &__link {
         margin-top: 50px;
         display: flex;

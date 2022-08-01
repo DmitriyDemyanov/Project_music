@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
+    <script src="js/player.js" defer></script>
+
 </head>
 
 <body>
@@ -155,7 +157,7 @@
         <div class="container">
             <div class="tracks">
                 <div class="tracks__photo">
-                    <img src="img/photo/radius_photo.png" alt="photo">
+                    <img src="img/photo/radius_photo.png" alt="photo" data-role="track-image">
                 </div>
                 <div class="tracks__wrapper">
                     <div class="about__volume">
@@ -164,54 +166,23 @@
                     </div>
                     <div class="tracks__player">
                         <div class="tracks__triangle-right"></div>
+
                         <div class="tracks__player__wrap">
                             <div class="tracks__player_band">
-                            <div class="tracks__player_band-second"></div>
-                           
-                        </div>
+                                <div class="tracks__player_band-second"></div>
+                            </div>
                         </div>
 
 
                         <div class="tracks__player_watch">
-                            <span class="tracks__player_stopwatch">00:47</span>
-                            <div class="tracks__player_number">-03:30</div>
+                            <span class="tracks__player_stopwatch">00:00</span>
+                            -
+                            <span class="tracks__player_number">03:30</span>
                         </div>
 
                     </div>
-                    <div class="tracks__list">
-                        <div class="tracks__number">01</div>
-                        <div class="title title_fz18 tracks__name">3LAU, Bright Lights — How You Love Me</div>
-                    </div>
 
-                    <div class="tracks__list">
-                        <div class="tracks__number">02</div>
-                        <div class="title title_fz18 tracks__name">Bright Lights, Kaleena Zanders, Kandy — War For Love
-                        </div>
-                    </div>
-
-                    <div class="tracks__list">
-                        <div class="tracks__number">03</div>
-                        <div class="title title_fz18 tracks__name">Pink Is Punk, Benny Benassi, Bright Lights — Ghost
-                        </div>
-                    </div>
-
-                    <div class="tracks__list">
-                        <div class="tracks__number">04</div>
-                        <div class="title title_fz18 tracks__name">Hardwell, Dyro, Bright Lights — Never Say Goodbye
-                        </div>
-                    </div>
-
-                    <div class="tracks__list">
-                        <div class="tracks__number">05</div>
-                        <div class="title title_fz18 tracks__name">Zeds Dead, Dirtyphonics, Bright Lights — Where Are
-                            You Now</div>
-                    </div>
-
-                    <div class="tracks__list">
-                        <div class="tracks__number">06</div>
-                        <div class="title title_fz18 tracks__name">Zedd, Bright Lights — Follow You Down
-                        </div>
-                    </div>
+                    <div class="tracks__list" data-role="tracks-list"></div>
 
                     <div class="tracks__link">
                         <div class="title title_fz18 tracks__link_text">Follow me:</div>
