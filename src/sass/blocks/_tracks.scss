@@ -7,6 +7,21 @@
         margin-top: 36px;
         width: 510px;
         height: 510px;
+        border-radius: 50%;
+        border: 20px solid rgba(122, 102, 204, 0.6);
+        position: relative;
+
+        &:after {
+            content: '';
+            width: 550px;
+            height: 550px;
+            position: absolute;
+            top: -40px;
+            left: -40px;
+            border-radius: 50%;
+            border: 20px solid rgba(122, 102, 204, 0.3);
+
+        }
       
         img {
             border-radius: 50%;
