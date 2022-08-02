@@ -11,9 +11,68 @@
     align-items: center;
 
     &__container {
-        width: 20vw;
-        height: 50vh;
+        padding: 40px 70px 0;
+        width: 500px;
+        min-height: 500px;
         background-color: #fff;
         border-radius: 20px;
+        position: relative;
+    }
+    &__cross {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        display: flex;
+        &-l {
+            height: 20px;
+            width: 2px;
+            background-color: #000;
+            transform: rotate(45deg);
+            position: relative;
+            &::after {
+                content: '';
+                height: 20px;
+                width: 2px;
+                background-color: #000;
+                transform: rotate(-90deg);
+                position: absolute;
+                top: 0;
+                right: 0;
+            }   
+        }
+    }
+    &__title {
+        color:rgb(54, 147, 190);
+        font-size: 40px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    &__bar {
+        height: 4px;
+        width: 110px;
+        background-color: rgb(54, 147, 190);
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: 0 auto;
+        input {
+            margin-bottom: 20px;
+            border-radius: 5px;
+            height: 40px;
+            padding: 10px;
+            border-color: rgba(0, 0, 0, 0.3);
+        }
+        button {
+            background-color: #2dbd5d;
+            border-radius: 20px;
+            height: 40px;
+            border: none;
+            color: #fff;
+        }
+
     }
 }
