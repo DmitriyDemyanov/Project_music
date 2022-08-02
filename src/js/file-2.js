@@ -42,37 +42,37 @@
 
 // console.log(firstFunc(['abc', '123'], handler4));
 
-function every(arr, fn) {
-  if (!Array.isArray(arr) || typeof fn !== "function") {
-    return new Error("error");
-  }
-  for (let i = 0; i < arr.length; i++) {
-    if (fn(arr[i])) {
-      return false;
-    }
-  }
-  return true;
-}
+// function every(arr, fn) {
+//   if (!Array.isArray(arr) || typeof fn !== "function") {
+//     return new Error("error");
+//   }
+//   for (let i = 0; i < arr.length; i++) {
+//     if (fn(arr[i])) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
 
-console.log(">>>", every([12, 32, 42, 6, 7], callback));
+// console.log(">>>", every([12, 32, 42, 6, 7], callback));
 
-function callback(el, index, allarr) {
-  if (el <= 10) {
-    return true;
-  } else {
-    return false;
-  }
-}
+// function callback(el, index, allarr) {
+//   if (el <= 10) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
-function compare(arr) {
-  let res = 0;
-  for (let i = 0; i < arr.length; i++) {
-    res = arr[i];
-    if (res < 5) {
-      return false;
-    }
-  }
-  return true;
-}
+// function compare(arr) {
+//   let res = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     res = arr[i];
+//     if (res < 5) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
 
-console.log(compare([6, 14, 8, 4, 10, 11]));
+// console.log(compare([6, 14, 8, 4, 10, 11]));

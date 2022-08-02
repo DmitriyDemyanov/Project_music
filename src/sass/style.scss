@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-
+@import 'blocks/modal';
 @import 'blocks/title';
 @import 'blocks/header';
 @import 'blocks/about';
@@ -11,6 +11,7 @@
 @import 'blocks/tracks';
 @import 'blocks/ptotos';
 @import 'blocks/carousel';
+
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
