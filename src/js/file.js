@@ -11,9 +11,8 @@
 // let sec = time % 60;
 // console.log(sec);
 
-// let res = `${parseTime(h)}:${parseTime(min)}:${parseTime(sec)}`; 
+// let res = `${parseTime(h)}:${parseTime(min)}:${parseTime(sec)}`;
 // console.log(res);
-
 
 // function parseTime(a) {
 //     if (a < 10) {
@@ -31,8 +30,6 @@
 //    res = str[i] + res;
 // }
 // console.log(res);
-
-
 
 // let str = 'JavaScript is a pretty good language';
 
@@ -67,16 +64,14 @@
 // for (let i = 0; i < arr.length; i++) {
 //    if (arr[i] % 2 !== 0) {
 //         res = `${res} ${arr[i]}`;
-//    } 
+//    }
 // }
-
-
 
 // for (let value of arr) {
 
 //     if (value % 2 !== 0) {
 //         res = `${res} ${value}`;
-//     } 
+//     }
 // }
 
 // console.log(arr[0]);
@@ -95,7 +90,6 @@
 // }
 
 // console.log(list);
-
 
 // function findMultiples(integer, limit) {
 //     const arr = [];
@@ -169,18 +163,17 @@
 //             break;
 //         }
 //     }
-    
+
 //     return res;
 // }
 
 // console.log(isOpposite('dina', 'dina'));
 
-
 // function countBy(x, n) {
 //   let z = [];
 //   let a = 0;
 // for(let i = 0; i < n; i++) {
-  
+
 // a = x + a
 //   z.push(a)
 // }
@@ -189,16 +182,13 @@
 
 // console.log((countBy(3,4)));
 
-
-
-
 //   function sumOfDifferences(arr) {
 //     let res = 0;
 //     let arrNew = [];
 //     for (let i = 0; i < arr.length; i++) {
 //       if(arr[i] > arr[i + 1]) {
 //            arrNew.push(arr[i])
-        
+
 //         console.log(arrNew);
 //       } else if(arr[i] < arr[i + 1]){
 //          arrNew.push(arr[i + 1])
@@ -206,10 +196,96 @@
 //       }
 //       return arrNew
 //     }
-   
-   
 
-    
 //   }
 // console.log((sumOfDifferences([1, 2, 10])));
 // console.log(t);
+
+// function find_average(array) {
+//   if (!Array.isArray(array) || array.length === 0) {
+//     return 0;
+//   }
+//   const length = array.length;
+//   let sum = 0;
+//   for (let i = 0; i < length; i++) {
+//     sum = sum + array[i];
+//     console.log(sum);
+//   }
+//   return sum / length;
+// }
+
+// console.log(find_average([1, 2, 3, 89, 17, 237]));
+const age = 999;
+
+function pozdorovajsya() {
+  console.log(this);
+  return `Hello, my name ${this.name}`;
+}
+
+const getName = function () {
+  console.log(this.name);
+  return this;
+};
+
+const getPrice = function () {
+  console.log(this.price);
+  return this;
+};
+
+const getSale = function () {
+  console.log(this.price - 10);
+  return this;
+};
+
+const lhon = {
+  age: 42,
+  name: "Lhon",
+  secondName: "Resfgtyh",
+  hobbies: ["football", "cinema", "butscratch"],
+
+  eyes: {
+    count: 3,
+    color: "green",
+    getEyesInfo: function () {
+      console.log(this);
+      return `I have ${this.count} eyes and they color are ${this.color}`;
+    },
+  },
+
+  legs: 5,
+  sayHello: pozdorovajsya,
+};
+
+const serhey = {
+  name: "Serhey",
+  sayHello: pozdorovajsya,
+};
+
+const prod = {
+  name: "Intel",
+  price: 100,
+  getPrice(currency, desc) {
+    console.log(`${currency}${this.price} - ${desc}`);
+  },
+};
+
+const prod2 = {
+  name: "AMS",
+  price: 250,
+};
+
+const prod3 = {
+  name: "WER",
+  price: 700,
+};
+
+// prod.getName().getPrice().getSale();
+// prod2.getName().getPrice().getSale();
+
+// prod.getPrice.call(prod2);
+// prod.getPrice("UAH", "Sale");
+// prod.getPrice.call(prod2, "$", "Eto ne Sale");
+// prod.getPrice.apply(prod3, ["Euro", "wojhooi"]);
+
+// const getPriceBindFromProduct3 = prod.getPrice.bind(prod3);
+// console.log(getPriceBindFromProduct3("$", "poplo"));
