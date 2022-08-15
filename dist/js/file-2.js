@@ -263,3 +263,66 @@
 // console.log(myModule.getStr());
 // console.log(myModule.getLength());
 // console.log(myModule.getReverse());
+
+
+// function calc() {
+//   let res = 0;
+//   return {
+//     setNum(a = 10) {
+//       res = a
+//       return a
+//     },
+//     getPlus(x = 5) {
+//       return res = res + x
+//     },
+//     getMulti(b = 2) {
+//       return res = res * b
+//     },
+//     getMinus(c = 0 ) {
+//       return res = res - c
+//     },
+//     getDivide(d = 1) {
+//       return res = res / d
+//     },
+//     getSum() {
+//       return res.toFixed(2)
+//     }
+//   }
+  
+// }
+
+const myCalc = calc();
+
+console.log('number',myCalc.setNum());
+console.log('plus',myCalc.getPlus());
+console.log('multi',myCalc.getMulti());
+console.log('minus',myCalc.getMinus());
+console.log('Divide',myCalc.getDivide());
+console.log('sum',myCalc.getSum());
+
+function calc() {
+   let res = 0;
+  
+  return {
+    setNum(a = 10) {
+      res = a
+      return a
+    },
+    getPlus(x = 5) {
+      return res = res + x
+    },
+    getMulti(b = 2) {
+      return res = res * b
+    },
+    getMinus(c = 0 ) {
+      return res = res - c
+    },
+    getDivide(d = 1) {
+      return res = res / d
+    },
+    getSum() {
+      return res.toFixed(2)
+    }
+  }
+  
+}
